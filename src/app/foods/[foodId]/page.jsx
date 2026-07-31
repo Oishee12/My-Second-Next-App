@@ -18,7 +18,7 @@ const {id, dish_name, image_link, main_ingredients} = data.data;
         ></Image>
         <h2 className="text-2xl">Ingredients: </h2>
         <ul>
-          {main_ingredients.map(ingredient=><li> {ingredient}</li>)  }
+          {main_ingredients.map((ingredient, index)=><li key={index}> {ingredient}</li>)  }
         </ul>
     </div>
   )
