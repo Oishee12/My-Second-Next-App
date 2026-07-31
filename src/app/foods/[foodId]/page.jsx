@@ -16,6 +16,10 @@ const {id, dish_name, image_link, main_ingredients} = data.data;
         width={300}
         height={300}
         ></Image>
+        <h2 className="text-2xl">Ingredients: </h2>
+        <ul>
+          {main_ingredients.map(ingredient=><li> {ingredient}</li>)  }
+        </ul>
     </div>
   )
 }
