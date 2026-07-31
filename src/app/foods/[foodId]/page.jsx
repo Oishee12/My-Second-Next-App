@@ -4,7 +4,7 @@ const FoodDetailsPage = async({params}) => {
     const {foodId} = await params;
 const res = await fetch(`https://phi-lab-server.vercel.app/api/v1/lab/foods/${foodId}`);
 const data = await res.json();
-const {id, dish_name, image_link} = data.data;
+const {id, dish_name, image_link, main_ingredients} = data.data;
 
   return (
     <div>
